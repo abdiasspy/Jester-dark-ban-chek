@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="Jester Dark WhatsApp Checker">
+  <title>Jester Dark — WhatsApp Checker</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">JD</span>
+      <div>
+        <strong>JESTER DARK</strong>
+        <small>OMBRES</small>
+      </div>
+    </div>
+    <span class="creator">Créateur : Jester Dark</span>
+  </header>
+
+  <main class="hero">
+    <section class="card">
+      <div class="eyebrow">WHATSAPP NUMBER CHECKER</div>
+      <h1>Vérifie ton numéro<br><span>en quelques secondes.</span></h1>
+      <p class="intro">
+        Entre un numéro au format international pour lancer la vérification.
+      </p>
+
+      <form id="checkerForm">
+        <label for="phone">Numéro WhatsApp</label>
+        <div class="input-row">
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            inputmode="tel"
+            autocomplete="tel"
+            placeholder="+2250700000000"
+            required
+          >
+          <button id="checkButton" type="submit">
+            <span>VÉRIFIER</span>
+            <span class="arrow">→</span>
+          </button>
+        </div>
+        <div class="hint">Format international recommandé : +225..., +33..., +1...</div>
+      </form>
+
+      <div id="loading" class="loading hidden">
+        <span class="spinner"></span>
+        Vérification en cours...
+      </div>
+
+      <section id="result" class="result hidden" aria-live="polite">
+        <div class="result-icon" id="resultIcon"></div>
+        <div>
+          <div class="result-label" id="resultLabel"></div>
+          <div class="result-message" id="resultMessage"></div>
+          <div class="result-number" id="resultNumber"></div>
+        </div>
+      </section>
+
+      <div class="demo-warning">
+        <b>Mode démo</b>
+        <span>
+          Par défaut, cette version ne prétend pas interroger les serveurs WhatsApp.
+          Elle est prête à recevoir un service/API de vérification autorisé.
+        </span>
+      </div>
+    </section>
+
+    <section class="features">
+      <article>
+        <span>01</span>
+        <h2>Rapide</h2>
+        <p>Interface légère avec réponse immédiate.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h2>Simple</h2>
+        <p>Un numéro, un bouton, un résultat clair.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h2>Jester Dark</h2>
+        <p>Identité visuelle sombre et personnalisée.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Jester Dark Ombres</span>
+    <span>WhatsApp Checker</span>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
