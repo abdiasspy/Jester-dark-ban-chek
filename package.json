@@ -1,0 +1,13 @@
+{
+  "name": "jester-dark-whatsapp-checker",
+  "version": "1.0.0",
+  "description": "Site de vérification de numéros WhatsApp avec interface Jester Dark.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
